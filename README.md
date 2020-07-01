@@ -4,6 +4,8 @@ A simple example of Spring Boot and GraphQL integration.
 
 [Postman](https://www.postman.com/) Collection [here](docs).
 
+Original data [here](https://github.com/joakimskoog/AnApiOfIceAndFire).
+
 ## Links
 
 - [GraphQL](https://graphql.org/)
