@@ -14,6 +14,10 @@ Original data [here](https://github.com/joakimskoog/AnApiOfIceAndFire).
 - [GraphQL Java](https://www.graphql-java.com/tutorials/getting-started-with-spring-boot/)
 - [GraphQL Java Lib](https://www.graphql-java-kickstart.com/spring-boot/)
 
+## Lectures
+
+- [Netflix: Our learnings from adopting GraphQL](https://netflixtechblog.com/our-learnings-from-adopting-graphql-f099de39ae5f)
+
 ## Commands
 
 `make test` run unit test
@@ -22,7 +26,11 @@ Original data [here](https://github.com/joakimskoog/AnApiOfIceAndFire).
 
 `make run` run the app
 
+## Tools
+
 `make h2-console` open h2 console (db name `got`)
+
+`make graphiql` open graphiql console
 
 ## GraphQL Queries
 
