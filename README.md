@@ -32,6 +32,8 @@ Original data [here](https://github.com/joakimskoog/AnApiOfIceAndFire).
 
 `make graphiql` open graphiql console
 
+`make voyager` open voyager console
+
 ## GraphQL Queries
 
 Endpoint `POST` `http://localhost:8080/graphql`.

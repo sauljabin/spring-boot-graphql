@@ -26,6 +26,7 @@ dependencies {
 
     implementation 'com.graphql-java-kickstart:graphql-spring-boot-starter:7.0.1'
     implementation 'com.graphql-java-kickstart:graphiql-spring-boot-starter:7.0.1'
+    implementation 'com.graphql-java-kickstart:voyager-spring-boot-starter:7.0.1'
 
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
