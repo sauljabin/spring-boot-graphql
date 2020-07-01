@@ -39,4 +39,12 @@ public class Character {
     @LazyCollection(LazyCollectionOption.FALSE)
     @JoinColumn(name = "character_id")
     private Set<Alias> aliases;
+
+    @ManyToMany
+    @LazyCollection(LazyCollectionOption.FALSE)
+    @JoinTable(
+            name = "characters_houses",
+            joinColumns = @JoinColumn(name = "character_id"),
+            inverseJoinColumns = @JoinColumn(name = "house_id"))
+    private Set<House> houses;
 }

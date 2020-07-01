@@ -134,11 +134,22 @@ create_schema('aliases',
                   'character_id': 'VARCHAR(36)',
                   'alias': 'VARCHAR(255)'}
               )
+create_schema('houses',
+              {
+                  'house_id': 'VARCHAR(36) PRIMARY KEY',
+                  'name': 'VARCHAR(100)',
+                  'words': 'VARCHAR(255)'}
+              )
+create_schema('characters_houses',
+              {
+                  'house_id': 'VARCHAR(36)',
+                  'character_id': 'VARCHAR(36)'}
+              )
 
 # CREATE SQL DATA
 characters_, titles_, aliases_, houses_, characters_houses_ = process_data()
 create_insert('characters', characters_)
 create_insert('titles', titles_)
 create_insert('aliases', aliases_)
-# create_insert('houses', houses_)
-# create_insert('characters_houses', characters_houses_)
+create_insert('houses', houses_)
+create_insert('characters_houses', characters_houses_)

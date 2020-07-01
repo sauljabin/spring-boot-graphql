@@ -4,6 +4,7 @@ type Character {
     gender: String
     titles: [Title]
     aliases: [Alias]
+    houses: [House]
 }
 
 type Title {
@@ -14,6 +15,12 @@ type Title {
 type Alias {
     aliasId: String
     alias: String
+}
+
+type House {
+    houseId: String
+    name: String
+    words: String
 }
 
 type Query {
