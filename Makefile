@@ -12,3 +12,6 @@ h2-console:
 
 graphiql:
 	xdg-open http://localhost:8080/graphiql
+
+voyager:
+	xdg-open http://localhost:8080/voyager
