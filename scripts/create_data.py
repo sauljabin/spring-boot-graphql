@@ -17,7 +17,7 @@ def sql_insert_format(table, record):
 
 def sql_create_table_format(table, schema):
     columns = ', '.join(['{} {}'.format(column, column_type) for column, column_type in schema.items()])
-    return 'CREATE TABLE {} ({});'.format(table, columns)
+    return 'CREATE TABLE {} ({});\n'.format(table, columns)
 
 
 def load_data(file):
@@ -117,11 +117,12 @@ if os.path.exists(DATA_SQL):
 
 # CREATE SQL SCHEMA
 create_schema('characters', {'character_id': 'VARCHAR(36) PRIMARY KEY', 'name': 'VARCHAR(100)', 'gender': 'VARCHAR(1)'})
+create_schema('titles', {'title_id': 'VARCHAR(36) PRIMARY KEY', 'character_id': 'VARCHAR(36)', 'title': 'VARCHAR(255)'})
 
 # CREATE SQL DATA
 characters_, titles_, aliases_, houses_, characters_houses_ = process_data()
 create_insert('characters', characters_)
-# save_insert('titles', titles_)
-# save_insert('aliases', aliases_)
-# save_insert('houses', houses_)
-# save_insert('characters_houses', characters_houses_)
+create_insert('titles', titles_)
+# create_insert('aliases', aliases_)
+# create_insert('houses', houses_)
+# create_insert('characters_houses', characters_houses_)

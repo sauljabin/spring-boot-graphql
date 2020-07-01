@@ -2,6 +2,12 @@ type Character {
     characterId: String
     name: String
     gender: String
+    titles: [Title]
+}
+
+type Title {
+    titleId: String
+    title: String
 }
 
 type Query {
