@@ -3,11 +3,17 @@ type Character {
     name: String
     gender: String
     titles: [Title]
+    aliases: [Alias]
 }
 
 type Title {
     titleId: String
     title: String
+}
+
+type Alias {
+    aliasId: String
+    alias: String
 }
 
 type Query {

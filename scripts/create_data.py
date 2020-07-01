@@ -116,13 +116,29 @@ if os.path.exists(DATA_SQL):
     os.remove(DATA_SQL)
 
 # CREATE SQL SCHEMA
-create_schema('characters', {'character_id': 'VARCHAR(36) PRIMARY KEY', 'name': 'VARCHAR(100)', 'gender': 'VARCHAR(1)'})
-create_schema('titles', {'title_id': 'VARCHAR(36) PRIMARY KEY', 'character_id': 'VARCHAR(36)', 'title': 'VARCHAR(255)'})
+create_schema('characters',
+              {
+                  'character_id': 'VARCHAR(36) PRIMARY KEY',
+                  'name': 'VARCHAR(100)',
+                  'gender': 'VARCHAR(1)'}
+              )
+create_schema('titles',
+              {
+                  'title_id': 'VARCHAR(36) PRIMARY KEY',
+                  'character_id': 'VARCHAR(36)',
+                  'title': 'VARCHAR(255)'}
+              )
+create_schema('aliases',
+              {
+                  'alias_id': 'VARCHAR(36) PRIMARY KEY',
+                  'character_id': 'VARCHAR(36)',
+                  'alias': 'VARCHAR(255)'}
+              )
 
 # CREATE SQL DATA
 characters_, titles_, aliases_, houses_, characters_houses_ = process_data()
 create_insert('characters', characters_)
 create_insert('titles', titles_)
-# create_insert('aliases', aliases_)
+create_insert('aliases', aliases_)
 # create_insert('houses', houses_)
 # create_insert('characters_houses', characters_houses_)
