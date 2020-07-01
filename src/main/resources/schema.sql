@@ -1,0 +1,1 @@
+CREATE TABLE characters (character_id VARCHAR(36) PRIMARY KEY, name VARCHAR(100), gender VARCHAR(1));
