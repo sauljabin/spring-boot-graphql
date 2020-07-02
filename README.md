@@ -17,6 +17,7 @@ Original data [here](https://github.com/joakimskoog/AnApiOfIceAndFire).
 ## Lectures
 
 - [Netflix: Our learnings from adopting GraphQL](https://netflixtechblog.com/our-learnings-from-adopting-graphql-f099de39ae5f)
+- [GraphQL DataLoader](https://github.com/graphql-java/java-dataloader) and [here](https://github.com/graphql-java-kickstart/graphql-java-tools/issues/58)
 
 ## Commands
 
